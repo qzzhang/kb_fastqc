@@ -26,7 +26,7 @@ RUN mkdir -p /kb/module/work
 
 WORKDIR /kb/module
 RUN mkdir -p ./bin
-# RUN cp -r /kb/deps/bin/* ./bin/
+RUN cp -r /kb/deps/bin/* ./bin/
 ENV PATH=/kb/module/bin:$PATH
 
 RUN make
