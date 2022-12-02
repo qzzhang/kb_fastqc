@@ -6,7 +6,7 @@ mkdir -p temp
 echo "Downloading fastqc..."
 cd ./temp
 #curl -o fastqc.zip 'http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9_source.zip'
-curl -o fastqc.zip 'https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip'
+curl --insecure -o fastqc.zip 'https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip'
 unzip fastqc.zip
 cd FastQC
 #ant  # no longer compiling from source

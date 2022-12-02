@@ -184,7 +184,7 @@ class kb_fastqc:
                 shutil.move(files['rev'], os.path.join(read_file_path, rev_name))
                 read_file_list.append(os.path.join(read_file_path, rev_name))
 
-        subprocess.check_output(["fastqc"] + read_file_list)
+        subprocess.check_output(["fastqc"] + ["-t", "6"] + read_file_list)  # TODO: use --memory once fastqc releases this feature
         # report = "Command run: "+" ".join(["fastqc"]+read_file_list)
 
         output = self.create_report(token, input_params['input_ws'],
