@@ -5,7 +5,7 @@ MAINTAINER KBase Developer
 # Insert apt-get instructions here to install
 # any required dependencies for your module.
 
-RUN apt-get update && apt-get install -y ant
+RUN apt-get update && apt-get install -y ant && apt-get -y install wget
 
 RUN mkdir -p /kb/data
 COPY ./data/index_start.txt /kb/data/
