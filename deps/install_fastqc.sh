@@ -8,7 +8,7 @@ cd ./temp
 #curl -o fastqc.zip 'http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9_source.zip'
 #curl --insecure -o fastqc.zip 'https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip'
 #unzip fastqc.zip
-wget --no-check-certificate 'https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.12.1.zip'
+wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.12.1.zip
 unzip fastqc_v0.12.1.zip
 cd FastQC
 #ant  # no longer compiling from source
